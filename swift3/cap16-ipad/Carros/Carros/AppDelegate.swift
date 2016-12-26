@@ -66,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func initIPad() {
         // Cria os controllers da Esquerda e Direita
-        detalhesController = DetalhesCarroViewController()
+        detalhesController = DetalhesCarroViewController(nibName:"DetalhesCarroViewController_iPad", bundle: nil)
         listaController = ListaCarrosViewController()
 
         let nav1 = MyNavigationController()

@@ -21,6 +21,10 @@ class DetalhesCarroViewController: UIViewController, UISplitViewControllerDelega
     init() {
         super.init(nibName: "DetalhesCarroViewController", bundle: nil)
     }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -117,16 +121,7 @@ class DetalhesCarroViewController: UIViewController, UISplitViewControllerDelega
         } else {
             print("Mostra no popover")
             
-            // Tamanho da janela
-            vc.preferredContentSize = CGSize(width: 600, height: 500)
-            vc.modalPresentationStyle = UIModalPresentationStyle.popover;
-
-            // Origem do popover
-            let popoverPresentationController = vc.popoverPresentationController
-            popoverPresentationController?.sourceView = bt
-            
-            // Mostra o view controller como popover
-            present(vc, animated: true, completion: nil)
+            PopoverUtil.show(self,viewController:vc, sourceView: bt, width:600, height:500)
         }
     }
     
@@ -136,7 +131,9 @@ class DetalhesCarroViewController: UIViewController, UISplitViewControllerDelega
 //        self.navigationController.pushViewController(vc, animated: true)
 
         let videoUtil = VideoUtil()
-        let url = self.carro!.url_foto.url()
+        let url = self.carro!.url_video.url()
+        print("video")
+        print(url)
         videoUtil.playUrlFullScreen(url, viewController: self)
     }
     
@@ -156,19 +153,12 @@ class DetalhesCarroViewController: UIViewController, UISplitViewControllerDelega
     }
     
     @IBAction func onClickPopover(_ bt: UIButton) {
-        print("onClickPopover")
+        // Mostra o view controller no popover
+        let bt = self.navigationItem.leftBarButtonItem!
         let vc = ListaCarrosViewController()
-        
-        // Tamanho da janela
-        vc.preferredContentSize = CGSize(width: 600, height: 500)
-        vc.modalPresentationStyle = UIModalPresentationStyle.popover;
-        
-        // Origem do popover
-        let popoverPresentationController = vc.popoverPresentationController
-        popoverPresentationController?.sourceView = bt
-        
-        // Mostra o view controller como popover
-        present(vc, animated: true)
+        // Mostra o popover ancorado no botão da navigation bar
+        PopoverUtil.show(self, viewController: vc, source: bt, width: 400, height: 800)
+
     }
 }
 

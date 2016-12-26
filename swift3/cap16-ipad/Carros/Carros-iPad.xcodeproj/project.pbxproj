@@ -33,6 +33,8 @@
 		DD5BE58F198806BB00E0F2FA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BE58E198806BB00E0F2FA /* String+Extensions.swift */; };
 		DD5BE59119880C5800E0F2FA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5BE59019880C5800E0F2FA /* MediaPlayer.framework */; };
 		DD5BE59319880CD300E0F2FA /* VideoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5BE59219880CD300E0F2FA /* VideoUtil.swift */; };
+		DD5D92741E115049008CC880 /* DetalhesCarroViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5D92731E115049008CC880 /* DetalhesCarroViewController_iPad.xib */; };
+		DD5D92761E11528D008CC880 /* PopoverUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5D92751E11528D008CC880 /* PopoverUtil.swift */; };
 		DD777A40197ED48700CE8930 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD777A3F197ED48700CE8930 /* Prefs.swift */; };
 		DD777A45197ED49000CE8930 /* PrefsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD777A41197ED49000CE8930 /* PrefsFile.swift */; };
 		DDA828191985D2D4000B24A9 /* GpsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA828181985D2D4000B24A9 /* GpsMapViewController.swift */; };
@@ -102,6 +104,8 @@
 		DD5BE58E198806BB00E0F2FA /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		DD5BE59019880C5800E0F2FA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		DD5BE59219880CD300E0F2FA /* VideoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoUtil.swift; sourceTree = "<group>"; };
+		DD5D92731E115049008CC880 /* DetalhesCarroViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesCarroViewController_iPad.xib; sourceTree = "<group>"; };
+		DD5D92751E11528D008CC880 /* PopoverUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverUtil.swift; sourceTree = "<group>"; };
 		DD777A3F197ED48700CE8930 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		DD777A41197ED49000CE8930 /* PrefsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsFile.swift; sourceTree = "<group>"; };
 		DD777A48197EDCD200CE8930 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -315,6 +319,7 @@
 				DD08E21D198002F000E1B6F7 /* Obj-C */,
 				DDED72FD197D81F6006A9C46 /* Alerta.swift */,
 				DDED72FE197D81F6006A9C46 /* DownloadImageView.swift */,
+				DD5D92751E11528D008CC880 /* PopoverUtil.swift */,
 				DD777A41197ED49000CE8930 /* PrefsFile.swift */,
 				DD777A3F197ED48700CE8930 /* Prefs.swift */,
 				DD5BE58E198806BB00E0F2FA /* String+Extensions.swift */,
@@ -344,6 +349,7 @@
 			children = (
 				DDED7305197D81F6006A9C46 /* DetalhesCarroViewController.swift */,
 				DDED7306197D81F6006A9C46 /* DetalhesCarroViewController.xib */,
+				DD5D92731E115049008CC880 /* DetalhesCarroViewController_iPad.xib */,
 			);
 			path = Detalhes;
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 				DD36A88919702D4F00FBBB40 /* Images.xcassets in Resources */,
 				DD36A89019702D4F00FBBB40 /* carros_esportivos.json in Resources */,
 				DD36A89119702D4F00FBBB40 /* carros_luxo.json in Resources */,
+				DD5D92741E115049008CC880 /* DetalhesCarroViewController_iPad.xib in Resources */,
 				DD5BE58D1988057700E0F2FA /* VideoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +525,7 @@
 				DDED7318197D81F6006A9C46 /* DetalhesCarroViewController.swift in Sources */,
 				DD08E224198002F000E1B6F7 /* SQLiteHelper.swift in Sources */,
 				DDED731E197D81F6006A9C46 /* SobreViewController.swift in Sources */,
+				DD5D92761E11528D008CC880 /* PopoverUtil.swift in Sources */,
 				DD777A45197ED49000CE8930 /* PrefsFile.swift in Sources */,
 				DD5BE59319880CD300E0F2FA /* VideoUtil.swift in Sources */,
 				DD08E2271981527200E1B6F7 /* CarroDB.swift in Sources */,
