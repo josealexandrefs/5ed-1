@@ -65,6 +65,7 @@ class VideoUtil {
         if let player = player {
             // AVPlayer não possui stop
             player.pause()
+            self.player = nil
         }
     }
     

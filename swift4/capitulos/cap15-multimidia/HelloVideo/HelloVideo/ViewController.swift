@@ -31,10 +31,10 @@ class ViewController: UIViewController {
         let url = URL(string:"http://www.livroiphone.com.br/carros/esportivos/ferrari_ff.mp4")
 
         // File
-//        self.videoUtil.playUrl(url, view: videoView)
+        self.videoUtil.playUrl(url, view: videoView)
 
         // Full screen
-        self.videoUtil.playUrlFullScreen(url, viewController: self)
+//        self.videoUtil.playUrlFullScreen(url, viewController: self)
         
         // Notificações para monitorar o fim do player
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.videoFim),
